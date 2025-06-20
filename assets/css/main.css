@@ -1,15 +1,3 @@
-/**
-* Template Name: MyResume
-* Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-* Updated: Jun 29 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -85,58 +73,6 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
-}
-
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /*--------------------------------------------------------------
@@ -326,16 +262,6 @@ h6 {
 .footer .social-links a:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
   text-decoration: none;
-}
-
-.footer .copyright {
-  padding-top: 25px;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.footer .credits {
-  font-size: 13px;
-  padding-top: 5px;
 }
 
 /*--------------------------------------------------------------
@@ -622,45 +548,6 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Stats Section
---------------------------------------------------------------*/
-.stats i {
-  background-color: var(--accent-color);
-  color: var(--contrast-color);
-  width: 54px;
-  height: 54px;
-  font-size: 24px;
-  border-radius: 50px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-.stats .stats-item {
-  margin-top: 10px;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  z-index: 0;
-}
-
-.stats .stats-item span {
-  font-size: 36px;
-  display: block;
-  font-weight: 700;
-  color: color-mix(in srgb, var(--default-color), transparent 20%);
-}
-
-.stats .stats-item p {
-  padding: 0;
-  margin: 0;
-  color: color-mix(in srgb, var(--default-color), transparent 50%);
-  font-size: 16px;
-}
-
-/*--------------------------------------------------------------
 # Skills Section
 --------------------------------------------------------------*/
 .skills .progress {
@@ -756,17 +643,32 @@ section,
   border: 2px solid var(--accent-color);
 }
 
+.resume .send-cv a {
+  color: var(--contrast-color);
+  background: var(--accent-color);
+  border: 0;
+  padding: 10px 30px;
+  transition: 0.4s;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+
+.resume .send-cv a:hover {
+  background: color-mix(in srgb, var(--accent-color), transparent 20%);
+  text-decoration: none;
+}
+
 /*--------------------------------------------------------------
-# Portfolio Section
+# Hobbies Section
 --------------------------------------------------------------*/
-.portfolio .portfolio-filters {
+.hobbies .hobbies-filters {
   padding: 0;
   margin: 0 auto 20px auto;
   list-style: none;
   text-align: center;
 }
 
-.portfolio .portfolio-filters li {
+.hobbies .hobbies-filters li {
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
@@ -780,33 +682,33 @@ section,
   font-family: var(--heading-font);
 }
 
-.portfolio .portfolio-filters li:hover,
-.portfolio .portfolio-filters li.filter-active {
+.hobbies .hobbies-filters li:hover,
+.hobbies .hobbies-filters li.filter-active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.portfolio .portfolio-filters li:first-child {
+.hobbies .hobbies-filters li:first-child {
   margin-left: 0;
 }
 
-.portfolio .portfolio-filters li:last-child {
+.hobbies .hobbies-filters li:last-child {
   margin-right: 0;
 }
 
 @media (max-width: 575px) {
-  .portfolio .portfolio-filters li {
+  .hobbies .hobbies-filters li {
     font-size: 14px;
     margin: 0 0 10px 0;
   }
 }
 
-.portfolio .portfolio-item {
+.hobbies .hobbies-item {
   position: relative;
   overflow: hidden;
 }
 
-.portfolio .portfolio-item .portfolio-info {
+.hobbies .hobbies-item .hobbies-info {
   opacity: 0;
   position: absolute;
   left: 12px;
@@ -818,21 +720,21 @@ section,
   padding: 15px;
 }
 
-.portfolio .portfolio-item .portfolio-info h4 {
+.hobbies .hobbies-item .hobbies-info h4 {
   font-size: 18px;
   font-weight: 600;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info p {
+.hobbies .hobbies-item .hobbies-info p {
   color: color-mix(in srgb, var(--default-color), transparent 30%);
   font-size: 14px;
   margin-bottom: 0;
   padding-right: 50px;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link,
-.portfolio .portfolio-item .portfolio-info .details-link {
+.hobbies .hobbies-item .hobbies-info .preview-link,
+.hobbies .hobbies-item .hobbies-info .details-link {
   position: absolute;
   right: 50px;
   font-size: 24px;
@@ -842,25 +744,25 @@ section,
   line-height: 0;
 }
 
-.portfolio .portfolio-item .portfolio-info .preview-link:hover,
-.portfolio .portfolio-item .portfolio-info .details-link:hover {
+.hobbies .hobbies-item .hobbies-info .preview-link:hover,
+.hobbies .hobbies-item .hobbies-info .details-link:hover {
   color: var(--accent-color);
 }
 
-.portfolio .portfolio-item .portfolio-info .details-link {
+.hobbies .hobbies-item .hobbies-info .details-link {
   right: 14px;
   font-size: 28px;
 }
 
-.portfolio .portfolio-item:hover .portfolio-info {
+.hobbies .hobbies-item:hover .hobbies-info {
   opacity: 1;
   bottom: 0;
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# Publications Section
 --------------------------------------------------------------*/
-.services .service-item {
+.publications .publications-item {
   background-color: var(--surface-color);
   box-shadow: 0px 5px 90px 0px rgba(0, 0, 0, 0.1);
   height: 100%;
@@ -870,7 +772,7 @@ section,
   border-radius: 5px;
 }
 
-.services .service-item .icon {
+.publications .publications-item .icon {
   margin: 0 auto;
   width: 100px;
   height: 100px;
@@ -881,190 +783,109 @@ section,
   position: relative;
 }
 
-.services .service-item .icon i {
+.publications .publications-item .icon i {
   font-size: 36px;
   transition: 0.5s;
   position: relative;
 }
 
-.services .service-item .icon svg {
+.publications .publications-item .icon svg {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.services .service-item .icon svg path {
+.publications .publications-item .icon svg path {
   transition: 0.5s;
   fill: color-mix(in srgb, var(--default-color), transparent 95%);
 }
 
-.services .service-item h3 {
+.publications .publications-item h3 {
   font-weight: 700;
   margin: 10px 0 15px 0;
   font-size: 22px;
 }
 
-.services .service-item p {
+.publications .publications-item p {
   line-height: 24px;
   font-size: 14px;
   margin-bottom: 0;
 }
 
-.services .service-item:hover {
+.publications .publications-item:hover {
   box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
 
-.services .service-item.item-cyan i {
+.publications .publications-item.item-cyan i {
   color: #0dcaf0;
 }
 
-.services .service-item.item-cyan:hover .icon i {
+.publications .publications-item.item-cyan:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-cyan:hover .icon path {
+.publications .publications-item.item-cyan:hover .icon path {
   fill: #0dcaf0;
 }
 
-.services .service-item.item-orange i {
+.publications .publications-item.item-orange i {
   color: #fd7e14;
 }
 
-.services .service-item.item-orange:hover .icon i {
+.publications .publications-item.item-orange:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-orange:hover .icon path {
+.publications .publications-item.item-orange:hover .icon path {
   fill: #fd7e14;
 }
 
-.services .service-item.item-teal i {
+.publications .publications-item.item-teal i {
   color: #20c997;
 }
 
-.services .service-item.item-teal:hover .icon i {
+.publications .publications-item.item-teal:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-teal:hover .icon path {
+.publications .publications-item.item-teal:hover .icon path {
   fill: #20c997;
 }
 
-.services .service-item.item-red i {
+.publications .publications-item.item-red i {
   color: #df1529;
 }
 
-.services .service-item.item-red:hover .icon i {
+.publications .publications-item.item-red:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-red:hover .icon path {
+.publications .publications-item.item-red:hover .icon path {
   fill: #df1529;
 }
 
-.services .service-item.item-indigo i {
+.publications .publications-item.item-indigo i {
   color: #6610f2;
 }
 
-.services .service-item.item-indigo:hover .icon i {
+.publications .publications-item.item-indigo:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-indigo:hover .icon path {
+.publications .publications-item.item-indigo:hover .icon path {
   fill: #6610f2;
 }
 
-.services .service-item.item-pink i {
+.publications .publications-item.item-pink i {
   color: #f3268c;
 }
 
-.services .service-item.item-pink:hover .icon i {
+.publications .publications-item.item-pink:hover .icon i {
   color: #fff;
 }
 
-.services .service-item.item-pink:hover .icon path {
+.publications .publications-item.item-pink:hover .icon path {
   fill: #f3268c;
-}
-
-/*--------------------------------------------------------------
-# Testimonials Section
---------------------------------------------------------------*/
-.testimonials .testimonials-carousel,
-.testimonials .testimonials-slider {
-  overflow: hidden;
-}
-
-.testimonials .testimonial-item .testimonial-content {
-  border-left: 3px solid var(--accent-color);
-  padding-left: 30px;
-}
-
-.testimonials .testimonial-item .testimonial-img {
-  border-radius: 50%;
-  border: 4px solid var(--background-color);
-  margin: 0 auto;
-}
-
-.testimonials .testimonial-item h3 {
-  font-size: 20px;
-  font-weight: bold;
-  margin: 10px 0 5px 0;
-}
-
-.testimonials .testimonial-item h4 {
-  font-size: 14px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin: 0 0 10px 0;
-}
-
-.testimonials .testimonial-item .stars i {
-  color: #ffc107;
-  margin: 0 1px;
-}
-
-.testimonials .testimonial-item .quote-icon-left,
-.testimonials .testimonial-item .quote-icon-right {
-  color: color-mix(in srgb, var(--accent-color), transparent 50%);
-  font-size: 26px;
-  line-height: 0;
-}
-
-.testimonials .testimonial-item .quote-icon-left {
-  display: inline-block;
-  left: -5px;
-  position: relative;
-}
-
-.testimonials .testimonial-item .quote-icon-right {
-  display: inline-block;
-  right: -5px;
-  position: relative;
-  top: 10px;
-  transform: scale(-1, -1);
-}
-
-.testimonials .testimonial-item p {
-  font-style: italic;
-}
-
-.testimonials .swiper-wrapper {
-  height: auto;
-}
-
-.testimonials .swiper-pagination {
-  margin-top: 30px;
-  position: relative;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: color-mix(in srgb, var(--default-color), transparent 85%);
-  opacity: 1;
-}
-
-.testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--accent-color);
 }
 
 /*--------------------------------------------------------------
@@ -1148,24 +969,24 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Portfolio Details Section
+# Hobbies Details Section
 --------------------------------------------------------------*/
-.portfolio-details .portfolio-details-slider img {
+.hobbies .hobbies-details-slider img {
   width: 100%;
 }
 
-.portfolio-details .swiper-wrapper {
+.hobbies .swiper-wrapper {
   height: auto;
 }
 
-.portfolio-details .swiper-button-prev,
-.portfolio-details .swiper-button-next {
+.hobbies .swiper-button-prev,
+.hobbies .swiper-button-next {
   width: 48px;
   height: 48px;
 }
 
-.portfolio-details .swiper-button-prev:after,
-.portfolio-details .swiper-button-next:after {
+.hobbies .swiper-button-prev:after,
+.hobbies .swiper-button-next:after {
   color: rgba(255, 255, 255, 0.8);
   background-color: rgba(0, 0, 0, 0.15);
   font-size: 24px;
@@ -1178,36 +999,36 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .swiper-button-prev:hover:after,
-.portfolio-details .swiper-button-next:hover:after {
+.hobbies .swiper-button-prev:hover:after,
+.hobbies .swiper-button-next:hover:after {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 @media (max-width: 575px) {
 
-  .portfolio-details .swiper-button-prev,
-  .portfolio-details .swiper-button-next {
+  .hobbies .swiper-button-prev,
+  .hobbies .swiper-button-next {
     display: none;
   }
 }
 
-.portfolio-details .swiper-pagination {
+.hobbies .swiper-pagination {
   margin-top: 20px;
   position: relative;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet {
+.hobbies .swiper-pagination .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: color-mix(in srgb, var(--default-color), transparent 85%);
   opacity: 1;
 }
 
-.portfolio-details .swiper-pagination .swiper-pagination-bullet-active {
+.hobbies .swiper-pagination .swiper-pagination-bullet-active {
   background-color: var(--accent-color);
 }
 
-.portfolio-details .portfolio-info h3 {
+.hobbies .hobbies-info h3 {
   font-size: 22px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -1215,7 +1036,7 @@ section,
   position: relative;
 }
 
-.portfolio-details .portfolio-info h3:after {
+.hobbies .hobbies-info h3:after {
   content: "";
   position: absolute;
   display: block;
@@ -1226,26 +1047,26 @@ section,
   bottom: 0;
 }
 
-.portfolio-details .portfolio-info ul {
+.hobbies .hobbies-info ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li {
+.hobbies .hobbies-info ul li {
   display: flex;
   flex-direction: column;
   padding-bottom: 15px;
 }
 
-.portfolio-details .portfolio-info ul strong {
+.hobbies .hobbies-info ul strong {
   text-transform: uppercase;
   font-weight: 400;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
   font-size: 14px;
 }
 
-.portfolio-details .portfolio-info .btn-visit {
+.hobbies .hobbies-info .btn-visit {
   padding: 8px 40px;
   background: var(--accent-color);
   color: var(--contrast-color);
@@ -1253,28 +1074,28 @@ section,
   transition: 0.3s;
 }
 
-.portfolio-details .portfolio-info .btn-visit:hover {
+.hobbies .hobbies-info .btn-visit:hover {
   background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
-.portfolio-details .portfolio-description h2 {
+.hobbies .hobbies-description h2 {
   font-size: 26px;
   font-weight: 700;
   margin-bottom: 20px;
 }
 
-.portfolio-details .portfolio-description p {
+.hobbies .hobbies-description p {
   padding: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item {
+.hobbies .hobbies-description .testimonial-item {
   padding: 30px 30px 0 30px;
   position: relative;
   background: color-mix(in srgb, var(--default-color), transparent 97%);
   margin-bottom: 50px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .testimonial-img {
+.hobbies .hobbies-description .testimonial-item .testimonial-img {
   width: 90px;
   border-radius: 50px;
   border: 6px solid var(--background-color);
@@ -1282,33 +1103,33 @@ section,
   margin: 0 10px 0 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h3 {
+.hobbies .hobbies-description .testimonial-item h3 {
   font-size: 18px;
   font-weight: bold;
   margin: 15px 0 5px 0;
   padding-top: 20px;
 }
 
-.portfolio-details .portfolio-description .testimonial-item h4 {
+.hobbies .hobbies-description .testimonial-item h4 {
   font-size: 14px;
   color: #6c757d;
   margin: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left,
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.hobbies .hobbies-description .testimonial-item .quote-icon-left,
+.hobbies .hobbies-description .testimonial-item .quote-icon-right {
   color: color-mix(in srgb, var(--accent-color), transparent 50%);
   font-size: 26px;
   line-height: 0;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-left {
+.hobbies .hobbies-description .testimonial-item .quote-icon-left {
   display: inline-block;
   left: -5px;
   position: relative;
 }
 
-.portfolio-details .portfolio-description .testimonial-item .quote-icon-right {
+.hobbies .hobbies-description .testimonial-item .quote-icon-right {
   display: inline-block;
   right: -5px;
   position: relative;
@@ -1316,25 +1137,25 @@ section,
   transform: scale(-1, -1);
 }
 
-.portfolio-details .portfolio-description .testimonial-item p {
+.hobbies .hobbies-description .testimonial-item p {
   font-style: italic;
   margin: 0 0 15px 0 0 0;
   padding: 0;
 }
 
 /*--------------------------------------------------------------
-# Service Details Section
+# Publications Details Section
 --------------------------------------------------------------*/
-.service-details .service-box {
+.publications-details .publications-box {
   padding: 20px;
   box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1);
 }
 
-.service-details .service-box+.service-box {
+.publications-details .publications-box+.publications-box {
   margin-top: 30px;
 }
 
-.service-details .service-box h4 {
+.publications-details .publications-box h4 {
   font-size: 20px;
   font-weight: 700;
   border-bottom: 2px solid color-mix(in srgb, var(--default-color), transparent 92%);
@@ -1342,7 +1163,7 @@ section,
   margin-bottom: 15px;
 }
 
-.service-details .services-list a {
+.publications-details .publications-list a {
   color: color-mix(in srgb, var(--default-color), transparent 20%);
   background-color: color-mix(in srgb, var(--default-color), transparent 96%);
   display: flex;
@@ -1352,31 +1173,31 @@ section,
   transition: 0.3s;
 }
 
-.service-details .services-list a:first-child {
+.publications-details .publications-list a:first-child {
   margin-top: 0;
 }
 
-.service-details .services-list a i {
+.publications-details .publications-list a i {
   font-size: 16px;
   margin-right: 8px;
   color: var(--accent-color);
 }
 
-.service-details .services-list a.active {
+.publications-details .publications-list a.active {
   color: var(--contrast-color);
   background-color: var(--accent-color);
 }
 
-.service-details .services-list a.active i {
+.publications-details .publications-list a.active i {
   color: var(--contrast-color);
 }
 
-.service-details .services-list a:hover {
+.publications-details .publications-list a:hover {
   background-color: color-mix(in srgb, var(--accent-color), transparent 95%);
   color: var(--accent-color);
 }
 
-.service-details .download-catalog a {
+.publications-details .download-catalog a {
   color: var(--default-color);
   display: flex;
   align-items: center;
@@ -1385,75 +1206,68 @@ section,
   border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
 }
 
-.service-details .download-catalog a:first-child {
+.publications-details .download-catalog a:first-child {
   border-top: 0;
   padding-top: 0;
 }
 
-.service-details .download-catalog a:last-child {
+.publications-details .download-catalog a:last-child {
   padding-bottom: 0;
 }
 
-.service-details .download-catalog a i {
+.publications-details .download-catalog a i {
   font-size: 24px;
   margin-right: 8px;
   color: var(--accent-color);
 }
 
-.service-details .download-catalog a:hover {
+.publications-details .download-catalog a:hover {
   color: var(--accent-color);
 }
 
-.service-details .help-box {
+.publications-details .help-box {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   margin-top: 30px;
   padding: 30px 15px;
 }
 
-.service-details .help-box .help-icon {
+.publications-details .help-box .help-icon {
   font-size: 48px;
 }
 
-.service-details .help-box h4,
-.service-details .help-box a {
+.publications-details .help-box h4,
+.publications-details .help-box a {
   color: var(--contrast-color);
 }
 
-.service-details .services-img {
+.publications-details .publications-img {
   margin-bottom: 20px;
 }
 
-.service-details h3 {
+.publications-details h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.service-details p {
+.publications-details p {
   font-size: 15px;
 }
 
-.service-details ul {
+.publications-details ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.service-details ul li {
+.publications-details ul li {
   padding: 5px 0;
   display: flex;
   align-items: center;
 }
 
-.service-details ul i {
+.publications-details ul i {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Starter Section Section
---------------------------------------------------------------*/
-.starter-section {
-  /* Add your styles here */
 }
